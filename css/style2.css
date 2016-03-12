@@ -81,9 +81,10 @@ h1, h2, h3, h4, h5, h6{
 
 
 .login-box{
-    background: url("../img/login-box.png")no-repeat;
+    background: url("../img/login-box.png") no-repeat ;
     background-position: center;
     height: 92px;
-    margin: 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     text-align: center;
 }
