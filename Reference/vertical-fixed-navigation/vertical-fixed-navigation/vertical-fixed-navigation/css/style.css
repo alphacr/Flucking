@@ -57,26 +57,17 @@ Main components
   position: relative;
   padding: 2em 0;
 }
-.cd-section:nth-of-type(1) {
-    background: url('../img/background.png');
-    background-size: 100% 100%;
+.cd-section:nth-of-type(odd) {
+  background-color: #3e3947;
 }
-.cd-section:nth-of-type(1) p {
+.cd-section:nth-of-type(odd) p {
   color: #898099;
 }
-.cd-section:nth-of-type(2) {
-  background: url('../img/background-2.png');
-  background-size: 100% 100%;
+.cd-section:nth-of-type(even) {
+  background-color: #745360;
 }
-.cd-section:nth-of-type(2) p {
+.cd-section:nth-of-type(even) p {
   color: #bda3ad;
-}
-.cd-section:nth-of-type(3) {
-  background: url('../img/background-3.png');
-  background-size: 100% 100%;
-}
-.cd-section:nth-of-type() p {
-  color: #898099;
 }
 .cd-section h1, .cd-section p {
   position: absolute;
@@ -94,8 +85,7 @@ Main components
   text-align: center;
 }
 .cd-section h1 {
-  padding-top: 100px;
-  color: black;
+  color: white;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 20px;
@@ -103,10 +93,7 @@ Main components
 }
 .cd-section p {
   line-height: 1.6;
-  padding-bottom: 100px;
 }
-
-
 @media only screen and (min-width: 768px) {
   .cd-section h1 {
     font-size: 30px;
@@ -141,7 +128,7 @@ Main components
 
 .no-touch #cd-vertical-nav {
   position: fixed;
-  left: 5%;
+  right: 40px;
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
@@ -151,7 +138,6 @@ Main components
   transform: translateY(-50%);
   z-index: 1;
 }
-
 .no-touch #cd-vertical-nav li {
   text-align: right;
 }
@@ -191,12 +177,9 @@ Main components
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
   /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
-  top: 0px;
-  height: 30px;
-  width: 30px;
-  padding: 30%;
-  margin-right: 10%;
-  margin-left: 10%;
+  top: 8px;
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
   background-color: #d88683;
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
@@ -210,8 +193,8 @@ Main components
 }
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
-  margin:0;
-  padding: .4em .4em;
+  margin-right: 10px;
+  padding: .4em .5em;
   color: white;
   font-size: 14px;
   font-size: 0.875rem;
