@@ -80,11 +80,20 @@
 
 	input[type="text"]
 	{
-	    font-size:24px;
-	}
-	input:placeholder-shown {
-	  border: 5px solid red;
-	}
+	    font-size:38px;
+	    background: transparent;
+    	border: none;
+    	text-align: center;
+    	background-size: 100%;
+    }
+
+    textarea{
+    	font-size: 20spx;
+    	background: transparent;
+    	border: none;
+    	text-align: center;
+
+    }
 	</style>
 	<title>Register</title>
 </head>
@@ -106,20 +115,19 @@
 			<div class ="container-fluid container-middle">
 				<div class = "row">
 					<div class = "col-sm-4 col-sm-offset-4 text-center">
-						 <img src="img/thriller.jpg" class="img-thumbnail" alt="profile-picture" width="100" height="100">
+						 <img src="img/thriller.jpg" class="img-thumbnail" alt="profile-picture" width="150" height="150">
 					</div>
 				</div>
 				<div class = "row">
-					<div class = "col-sm-4 col-sm-offset-4 text-center " style = "background-color: rgb(213,145,0); height: 100px; margin-top: 10px; margin-bottom: 10px; border: 3px solid black; 	border-radius: 10px;">
-						 <input type= "text" placeholder ="Latisha Adjani"></input> 
-						 <h1> Latisha Adjani </h1>
-						 <h2> @rocketwild </h2>
+					<div class = "col-sm-4 col-sm-offset-4" style = "background-color: rgb(213,145,0); height: 100px; margin-top: 10px; margin-bottom: 10px; border: 3px solid black; border-radius: 10px;">
+						 <input type= "text" placeholder ="Latisha Adjani"></input> </br>
+						 <input type= "text" placeholder ="@rocketwild"></input>
 					</div>
 				</div>
 				<div class = "row">
 					<div class = "col-sm-4 col-sm-offset-4 text-center img-rounded" style = "background-color: rgb(194,194,194); height: 100px; border-radius: 10px;">
-						 <h1>Bio </h1>
-						 <p> If I were a movie then what title that suits me? </p>
+						 <p style = "text-align: left;">Bio: </p>
+						 <textarea placeholder = "If I were a movie then what title that suits me?"></textarea>
 					</div>
 				</div>
 			</div>
