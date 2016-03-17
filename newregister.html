@@ -46,6 +46,7 @@
 	position: fixed;
 	left: 0px;
 	z-index: 1;
+	border-right: dotted 6px;
 	}
 	.button1 {
 	position: fixed;
@@ -71,50 +72,92 @@
 	top: 80%;
 	width: 8%;
 	}
+
+	.container-middle {
+	    padding-top: 10%;
+	    padding-bottom: 10%;
+	}
+
+	input[type="text"]
+	{
+	    font-size:24px;
+	}
+	input:placeholder-shown {
+	  border: 5px solid red;
+	}
 	</style>
 	<title>Register</title>
 </head>
 <body>
-<div class="sidebar">
-<svg class="button1" width="100" height="100" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="40" stroke="black" stroke-dasharray="10,5" stroke-width="3" fill="#ffff66" />
-</svg>
-<svg class="button2" width="100" height="100" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="40" stroke="black" stroke-dasharray="10,5" stroke-width="3" fill=" #80ccff" />
-</svg>
-<svg class="button3" width="100" height="100" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="40" stroke="black" stroke-dasharray="10,5" stroke-width="3" fill="#ff6666" />
-</svg>
-</div>
+	<div class="sidebar">
+		<svg class="button1" width="100" height="100" viewBox="0 0 100 100">
+  			<circle cx="50" cy="50" r="40" stroke="black" stroke-dasharray="10,5" stroke-width="3" fill="#ffff66" />
+		</svg>
+		<svg class="button2" width="100" height="100" viewBox="0 0 100 100">
+  			<circle cx="50" cy="50" r="40" stroke="black" stroke-dasharray="10,5" stroke-width="3" fill=" #80ccff" />
+		</svg>
+		<svg class="button3" width="100" height="100" viewBox="0 0 100 100">
+  			<circle cx="50" cy="50" r="40" stroke="black" stroke-dasharray="10,5" stroke-width="3" fill="#ff6666" />
+		</svg>
+	</div>
 	<div class="main">
+		<!-- First Section -->
 		<section id="section1" data-index="1">
-		<svg class="button4" width="100" height="100" viewBox="0 0 100 100">
-			<circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="#b3b3b3" href="#1"/>
-			<path d="M40 75 L70 50 L40 25" stroke="black" stroke-width="6" fill="none" stroke-linecap="round"/>
-		</svg>
+			<div class ="container-fluid container-middle">
+				<div class = "row">
+					<div class = "col-sm-4 col-sm-offset-4 text-center">
+						 <img src="img/thriller.jpg" class="img-thumbnail" alt="profile-picture" width="100" height="100">
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-sm-4 col-sm-offset-4 text-center " style = "background-color: rgb(213,145,0); height: 100px; margin-top: 10px; margin-bottom: 10px; border: 3px solid black; 	border-radius: 10px;">
+						 <input type= "text" placeholder ="Latisha Adjani"></input> 
+						 <h1> Latisha Adjani </h1>
+						 <h2> @rocketwild </h2>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-sm-4 col-sm-offset-4 text-center img-rounded" style = "background-color: rgb(194,194,194); height: 100px; border-radius: 10px;">
+						 <h1>Bio </h1>
+						 <p> If I were a movie then what title that suits me? </p>
+					</div>
+				</div>
+			</div>
+			<svg class="button4" width="100" height="100" viewBox="0 0 100 100">
+				<circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="#b3b3b3" href="#1"/>
+				<path d="M40 75 L70 50 L40 25" stroke="black" stroke-width="6" fill="none" stroke-linecap="round"/>
+			</svg>
 		</section>
+		<!-- Second Section -->
 		<section id="section2" data-index="2">
-		<svg class="button4" width="100" height="100" viewBox="0 0 100 100">
-		<circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="#b3b3b3" href="#1"/>
-		<path d="M40 75 L70 50 L40 25" stroke="black" stroke-width="6" fill="none" stroke-linecap="round"/>
-		</svg>
+			<svg class="button4" width="100" height="100" viewBox="0 0 100 100">
+				<circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="#b3b3b3" href="#1"/>
+				<path d="M40 75 L70 50 L40 25" stroke="black" stroke-width="6" fill="none" stroke-linecap="round"/>
+			</svg>
 		</section>
+		<!-- Third Section -->
 		<section id="section3" data-index="3">
-		<svg class="button4" width="100" height="100" viewBox="0 0 100 100">
-		<circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="#b3b3b3" href="#1"/>
-		<path d="M40 75 L70 50 L40 25" stroke="black" stroke-width="6" fill="none" stroke-linecap="round"/>
-		</svg>
+			<svg class="button4" width="100" height="100" viewBox="0 0 100 100">
+				<circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="#b3b3b3" href="#1"/>
+				<path d="M40 75 L70 50 L40 25" stroke="black" stroke-width="6" fill="none" stroke-linecap="round"/>
+			</svg>
 		</section>
 	</div>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+	<script>
+	$(".main").onepage_scroll({direction: "horizontal", loop: "false"});
+	$(".button1").click(function(){
+		$(".main").moveTo(1)});
+	$(".button2").click(function(){
+		$(".main").moveTo(2)});
+	$(".button3").click(function(){
+		$(".main").moveTo(3)});
+	$(".button4").click(function(){
+		$(".main").moveDown()});
+	</script>
+
 </body>
-<script>
-$(".main").onepage_scroll({direction: "horizontal", loop: "false"});
-$(".button1").click(function(){
-	$(".main").moveTo(1)});
-$(".button2").click(function(){
-	$(".main").moveTo(2)});
-$(".button3").click(function(){
-	$(".main").moveTo(3)});
-$(".button4").click(function(){
-	$(".main").moveDown()});
-</script>
+</html>
