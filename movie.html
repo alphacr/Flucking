@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Movie Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+		.navbar-brand {
+		    position: absolute;
+		    width: 100%;
+		    left: 50%;
+		    bottom: 10px;
+		    text-align: center;
+		    margin-left: -50px !important;  /* 50% of your logo width */
+		    display: block;
+		}
+		.navbar-toggle {
+		    z-index:3;
+		}
+		.navbar-button{
+			width: 20px;
+			height: 20px;
+		}
+		body {
+			background: url("img/background-3.png");
+			padding-top: 4%;
+		}
+		.padding{
+			padding: 10px 10px 10px 10px;
+		}
+
+		.margin{
+			margin: 10px 10px 10px 10px;
+		}
+		.row-margin {
+			margin-top:10px;
+			margin-bottom: 20px;
+		}
+		@font-face {
+		    font-family: 'pixelar';
+		    src: url("fonts/pixelar.ttf");
+		}
+		p{
+			display: inline;
+			font-family: 'pixelar';
+		}
+		.container {
+		    /* remember to set a width */
+		    width: 70%;
+		    margin-right: auto;
+		    margin-left: auto;
+		}
+		.container-white{
+			background: rgba(255, 255, 255, .6); 
+			border: solid 4px; 
+			border-radius: 10px;
+			padding: 0px 30px 15px 30px;
+		}
+		.container-box{
+			background: rgba(255,255,255, .8);
+			border: solid 4px; 
+			border-radius: 10px; 
+			padding: 10px 10px 10px 10px;
+		}
+		.poster{
+			width: 150px; 
+			height: 240px; 
+			text-align: center;
+		}
+    </style>
+  </head>
+  <body>
+  	<!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" style="background: grey;">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+	    <a class="navbar-brand" href="#"><img src="img/roulette.png" style="width: 40px; height: 40px" /></a>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#"><img class="navbar-button" src="img/house_logo.png"></a></li>
+	        <li><a href="#"><img class="navbar-button" src="img/movie_roll.png"></a></li>
+	        <li><a href="#"><img class="navbar-button" src="img/friends_logo.png"></a></li>
+	      </ul>
+	      <form class="navbar-form navbar-left" role="search">
+	        <div class="input-group">
+	            <input type="text" class="form-control" placeholder="Search movie or genre" />
+	            <span class="input-group-addon">
+	                <i class="fa fa-search"></i>
+	            </span>
+	        </div>
+	      </form>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="register.html"><img class="navbar-button" src="img/comedy.png"></a></li>
+	        <li><a href="#"><img class="navbar-button" src="img/message_logo.png"></a></li>
+	        <li><a href="#"><img class="navbar-button" src="img/settings_logo.png"></a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav><!-- Navbar Collapse-->
+
+	<div class="container container-white">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Movie Title</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<span>Xh Ymin</span> <span>|</span> <span>Genre</span> <span>|</span> <span class="glyphicon glyphicon-star" style="color:gold"></span><span>Rating/10</span>
+			</div>
+		</div>
+	  	<div class="row row-margin">
+		  	<div class="col-md-4 ">
+		  		<img src="img/poster.png" class= "img-responsive center-block poster" alt= "Movie Poster">
+		  		<p class="text-center">Movie Title</p>
+		  	</div>
+		    <div class="col-md-8">
+				<div class="embed-responsive" style="width: 100%; height: 300px;">
+				    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RiPWMhfQUxs"  alt = "Movie Video" allowfullscreen></iframe>
+				</div>
+		    </div>
+		</div>
+		<div class="row">
+		  	<div class="col-md-4" >
+		  		<div class="col-md-12 container-box">
+		  			<p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+		  		</div>
+		  	</div>
+		    <div class="col-md-8">
+		    	<div class="col-md-12 container-box">
+		    		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+		    	</div>
+		    </div>
+		</div>
+		 <!-- Page Header -->
+        <div class="row">  
+            <div class="col-md-8 col-md-offset-4">
+                <h3 class="page-header">You may also like...</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">  
+	        <div class="col-md-8 col-md-offset-4">
+	            <div class="col-sm-4 portfolio-item">
+	                <a href="#">
+	                    <img class="img-responsive center-block poster" src="img/poster.png" alt="Movie Poster">
+	                </a>
+	                <h6>
+	                    <a href="#"><p class="text-center">Movie Title</p></a>
+	                </h6>
+	            </div>
+	            <div class="col-sm-4 portfolio-item">
+	                <a href="#">
+	                    <img class="img-responsive center-block poster" src="img/poster.png" alt="Movie Poster">
+	                </a>
+	                <h6>
+	                    <a href="#"><p class="text-center">Movie Title</p></a>
+	                </h6>
+	            </div>
+	            <div class="col-sm-4 portfolio-item">
+	                <a href="#">
+	                    <img class="img-responsive center-block poster" src="img/poster.png" alt="Movie Poster">
+	                </a>
+	                <h6>
+	                    <a href="#"><p class="text-center">Movie Title</p></a>
+	                </h6>
+	            </div>
+            </div>
+	        
+        </div>
+        <!-- /.row -->
+	</div>
+
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
