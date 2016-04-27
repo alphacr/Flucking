@@ -10,45 +10,17 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
     <style type="text/css">
-		.navbar-brand {
-		    position: absolute;
-		    width: 100%;
-		    left: 50%;
-		    bottom: 10px;
-		    text-align: center;
-		    margin-left: -50px !important;  /* 50% of your logo width */
-		    display: block;
-		}
-		.navbar-toggle {
-		    z-index:3;
-		}
-		.navbar-button{
-			width: 20px;
-			height: 20px;
-		}
-		body {
-			padding-top: 4%;
-			background: url('img/background-3.png') no-repeat center center fixed; 
-	        -webkit-background-size: cover;
-	        -moz-background-size: cover;
-	        -o-background-size: cover;
-	        background-size: cover;
-		}
 		.padding{
 			padding: 10px 10px 10px 10px;
 		}
-
 		.margin{
 			margin: 10px 10px 10px 10px;
 		}
 		.row-margin {
 			margin-top:10px;
 			margin-bottom: 20px;
-		}
-		@font-face {
-		    font-family: 'pixelar';
-		    src: url("fonts/pixelar.ttf");
 		}
 		p{
 			display: inline;
@@ -80,43 +52,44 @@
     </style>
   </head>
   <body>
-  	<!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top" style="background: black;">
-	  <div class="container-fluid">
+	<!-- Navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
+	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	    	</button>
 	    </div>
-	    <a class="navbar-brand" href="#"><img src="img/roulette.png" style="width: 40px; height: 40px" /></a>
+	    <a class="navbar-brand" href="#"><img src="img/roulette.png"/></a>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li><a href="#"><img class="navbar-button" src="img/house_logo.png"></a></li>
-	        <li><a href="#"><img class="navbar-button" src="img/movie_roll.png"></a></li>
-	        <li><a href="#"><img class="navbar-button" src="img/friends_logo.png"></a></li>
-	      </ul>
-	      <form class="navbar-form navbar-left" role="search">
-	        <div class="input-group">
-	            <input type="text" class="form-control" placeholder="Search movie or genre" />
-	            <span class="input-group-addon">
-	                <i class="fa fa-search"></i>
-	            </span>
-	        </div>
-	      </form>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="register.html"><img class="navbar-button" src="img/comedy.png"></a></li>
-	        <li><a href="#"><img class="navbar-button" src="img/message_logo.png"></a></li>
-	        <li><a href="#"><img class="navbar-button" src="img/settings_logo.png"></a></li>
-	      </ul>
+	    	<ul class="nav navbar-nav">
+	        	<li><a href="#"><img class="navbar-button" src="img/house_logo.png"></a></li>
+	        	<li><a href="#"><img class="navbar-button" src="img/movie_roll.png"></a></li>
+	        	<li><a href="#"><img class="navbar-button" src="img/friends_logo.png"></a></li>
+	      	</ul>
+	    	<form class="navbar-form navbar-left" role="search">
+	       		<div class="input-group">
+	            	<input type="text" class="form-control" placeholder="Search movie or genre" />
+	            	<span class="input-group-addon">
+	                	<i class="fa fa-search"></i>
+	            	</span>
+	        	</div>
+	    	</form>
+	      	<ul class="nav navbar-nav navbar-right">
+	        	<li><a href="register.html"><img class="navbar-button" src="img/comedy.png"></a></li>
+	        	<li><a href="#"><img class="navbar-button" src="img/message_logo.png"></a></li>
+	        	<li><a href="#"><img class="navbar-button" src="img/settings_logo.png"></a></li>
+	      	</ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav><!-- Navbar Collapse-->
+
 	<!-- Page Content -->
 	<div class="container container-white">
 		<div class="row">
