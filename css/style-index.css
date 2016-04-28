@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'pixelar';
+    src: url("../fonts/pixelar.ttf");
+}
+
 .navbar-text > a {
     color: inherit;
     text-decoration: none;
@@ -11,12 +16,10 @@
 .navbar-default .navbar-nav > li > a{
     color: black;
     font-size: 30px;
+    font-family: 'pixelar';
 }
 
-@font-face {
-    font-family: 'pixelar';
-    src: url("../fonts/pixelar.ttf");
-}
+
 
 body{
     padding-top: 43px;
@@ -26,6 +29,9 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.font-pixelar{
     font-family: 'pixelar';
 }
 

@@ -10,8 +10,13 @@ body {
 
 @font-face {
     font-family: 'pixelar';
-    src: url("fonts/pixelar.ttf");
+    src: url("../fonts/pixelar.ttf");
 }
+
+.font-pixelar{
+    font-family: 'pixelar';
+}
+
 .navbar-brand {
     position: absolute;
     width: 100%;
@@ -35,4 +40,48 @@ body {
 .navbar-button{
 	width: 20px;
 	height: 20px;
+}
+
+h1{
+	font: 36px Arial,sans-serif;
+    font-weight: bold;
+}
+
+p{
+	display: inline;
+	font: Arial,sans-serif;
+}
+
+
+.container-70{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-white{
+	background: rgba(255, 255, 255, .6); 
+	border: solid 4px; 
+	border-radius: 10px;
+	padding: 0px 30px 15px 30px;
+}
+.container-box{
+	background: rgba(255,255,255, .8);
+	border: solid 4px; 
+	border-radius: 10px; 
+	padding: 10px 10px 10px 10px;
+}
+.poster{
+	width: 150px; 
+	height: 240px; 
+	text-align: center;
+}
+.padding{
+	padding: 10px 10px 10px 10px;
+}
+.margin{
+	margin: 10px 10px 10px 10px;
+}
+.row-margin {
+	margin-top:10px;
+	margin-bottom: 20px;
 }
